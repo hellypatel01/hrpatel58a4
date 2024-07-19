@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEB700 HTML Demo</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Student Name</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                <li class="nav-item active"><a class="nav-link" href="/htmlDemo">Html Demo</a></li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/students">Students</a></li>
+                <li class="nav-item"><a class="nav-link" href="/tas">Teaching Assistants</a></li>
+                <li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <main class="col-md-12">
+                <!-- Start your code here -->
+
+                <!-- Tables Section -->
+                <section>
+                    <h2>Tables</h2>
+                    <table class="table table-bordered">
+                        <caption>Table 1: Sample Data</caption>
+                        <thead>
+                            <tr>
+                                <th>Header 1</th>
+                                <th>Header 2</th>
+                                <th>Header 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Row 1 Col 1</td>
+                                <td rowspan="2">Row 1 Col 2 (Rowspan)</td>
+                                <td>Row 1 Col 3</td>
+                            </tr>
+                            <tr>
+                                <td>Row 2 Col 1</td>
+                                <td>Row 2 Col 3</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Row 3 Col 1 (Colspan)</td>
+                                <td>Row 3 Col 3</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Footer 1</td>
+                                <td>Footer 2</td>
+                                <td>Footer 3</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <table class="table table-bordered">
+                        <caption>Table 2: More Sample Data</caption>
+                        <thead>
+                            <tr>
+                                <th>Header A</th>
+                                <th>Header B</th>
+                                <th>Header C</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Row A1 Col 1</td>
+                                <td>Row A1 Col 2</td>
+                                <td>Row A1 Col 3</td>
+                            </tr>
+                            <tr>
+                                <td>Row A2 Col 1</td>
+                                <td colspan="2">Row A2 Col 2 (Colspan)</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Row A3 Col 1 (Rowspan)</td>
+                                <td>Row A3 Col 2</td>
+                                <td>Row A3 Col 3</td>
+                            </tr>
+                            <tr>
+                                <td>Row A4 Col 2</td>
+                                <td>Row A4 Col 3</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Footer A</td>
+                                <td>Footer B</td>
+                                <td>Footer C</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <p>This section demonstrates the use of HTML tables, including headers, footers, and the rowspan and colspan properties.</p>
+                </section>
+
+                <!-- Lists Section -->
+                <section>
+                    <h2>Lists</h2>
+                    <ol>
+                        <li>Item 1</li>
+                        <li>Item 2
+                            <ul>
+                                <li>Subitem 1</li>
+                                <li>Subitem 2</li>
+                                <li>Subitem 3</li>
+                            </ul>
+                        </li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                        <li>Item 5</li>
+                    </ol>
+                    <p>This section demonstrates the use of ordered and unordered lists in HTML.</p>
+                </section>
+
+                <!-- Images Section -->
+                <section>
+                    <h2>Images</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Snowboarder_in_halfpipe.jpg" alt="Snowboarder in halfpipe" class="img-fluid" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png" alt="PNG Transparency Demonstration" class="img-fluid" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Example_of_a_blossom.jpg" alt="Example of a blossom" class="img-fluid" />
+                    <p>This section includes three images with descriptive alt text.</p>
+                </section>
+
+                <!-- Audio Section -->
+                <section>
+                    <h2>Audio</h2>
+                    <audio controls>
+                        <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.mp3" type="audio/mpeg">
+                        <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.ogg" type="audio/ogg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>This section features an HTML5 audio player with sample audio files.</p>
+                </section>
+
+                <!-- Video Section -->
+                <section>
+                    <h2>Video</h2>
+                    <video controls width="600">
+                        <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.mp4" type="video/mp4">
+                        <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.ogg" type="video/ogg">
+                        <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>This section features an HTML5 video player with sample video files.</p>
+                </section>
+
+                <!-- End your code here -->
+            </main>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
